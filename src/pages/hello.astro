@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HelloSvelte from '../components/Hello.svelte';
+---
+<Layout title="Hello world">
+  <HelloSvelte count={Math.floor(Math.random()*100)} client:load />
+
+</Layout>
