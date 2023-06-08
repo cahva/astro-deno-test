@@ -33,6 +33,11 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+	<nav>
+		<a href="/hello">Hello World</a>
+		<a href="https://inderes.fi" target="_blank">Inderes</a>
+		<a href="https://github.com/cahva" target="_blank">My GitHub</a>
+	</nav>
 </Layout>
 
 <style>
@@ -45,6 +50,13 @@ import Card from '../components/Card.astro';
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+	}
+
+	nav {
+		margin: 2rem auto;
+		max-width: 60ch;
+		display: flex;
+		gap: 1rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
